@@ -36,11 +36,20 @@ require_once("config.php");
 
 // echo $ninja;
 
+// $usuario = new Usuario();
+
+// $usuario->loadById(8);
+
+// $usuario->update("Tsunade", "Sama");
+
+// echo $usuario;
+
+
 $usuario = new Usuario();
 
 $usuario->loadById(8);
 
-$usuario->update("Tsunade", "Sama");
+$usuario->delete();
 
 echo $usuario;
 
