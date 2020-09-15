@@ -27,14 +27,22 @@ require_once("config.php");
 
 // echo $usuario;
 
-$ninja = new Usuario();
+// $ninja = new Usuario();
 
-$ninja -> setDeslogin("Hatake");
-$ninja -> setDessenha("kakashi");
+// $ninja -> setDeslogin("Hatake");
+// $ninja -> setDessenha("kakashi");
 
-$ninja -> insert();
+// $ninja -> insert();
 
-echo $ninja;
+// echo $ninja;
+
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("Tsunade", "Sama");
+
+echo $usuario;
 
 
 ?>
