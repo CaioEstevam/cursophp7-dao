@@ -22,9 +22,19 @@ require_once("config.php");
 // echo json_encode($search);
 
 
-$usuario = new Usuario();
-$usuario->login("caio", "besta");
+// $usuario = new Usuario();
+// $usuario->login("caio", "besta");
 
-echo $usuario;
+// echo $usuario;
+
+$ninja = new Usuario();
+
+$ninja -> setDeslogin("Hatake");
+$ninja -> setDessenha("kakashi");
+
+$ninja -> insert();
+
+echo $ninja;
+
 
 ?>
